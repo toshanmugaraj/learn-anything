@@ -2,12 +2,36 @@
   "name": "learn-anything-gui",
   "version": "0.1.0",
   "private": true,
-  "description": "Learn Anything GUI (under construction)",
+  "type": "module",
+  "description": "Learn Anything GUI: learn Rust from a real local project in the browser",
   "homepage": "https://github.com/ChenChenyaqi/learn-anything",
   "repository": {
     "type": "git",
     "url": "https://github.com/ChenChenyaqi/learn-anything"
   },
   "license": "AGPL-3.0-only",
-  "author": "yaqi chen"
+  "author": "yaqi chen",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "start": "node server/index.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.1",
+    "dompurify": "^3.4.11",
+    "highlight.js": "^11.11.1",
+    "markdown-it": "^14.1.0",
+    "tailwindcss": "^4.3.1",
+    "vue": "^3.5.38"
+  },
+  "devDependencies": {
+    "@types/markdown-it": "^14.1.2",
+    "@vitejs/plugin-vue": "^5.2.4",
+    "typescript": "^5.9.3",
+    "vite": "^6.4.1",
+    "vitest": "^3.2.4"
+  }
 }

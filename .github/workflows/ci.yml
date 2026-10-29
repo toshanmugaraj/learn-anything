@@ -42,6 +42,7 @@ jobs:
 
       - run: pnpm install --frozen-lockfile
       - run: pnpm exec tsc --noEmit -p packages/cli/tsconfig.json
+      - run: pnpm -F learn-anything-gui typecheck
 
   test:
     name: Test
